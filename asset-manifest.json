@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Prextures/static/css/main.4269d9d8.chunk.css",
+    "main.js": "/Prextures/static/js/main.bc8151b0.chunk.js",
+    "main.js.map": "/Prextures/static/js/main.bc8151b0.chunk.js.map",
+    "runtime-main.js": "/Prextures/static/js/runtime-main.5f4d3a4b.js",
+    "runtime-main.js.map": "/Prextures/static/js/runtime-main.5f4d3a4b.js.map",
+    "static/js/2.126bbd00.chunk.js": "/Prextures/static/js/2.126bbd00.chunk.js",
+    "static/js/2.126bbd00.chunk.js.map": "/Prextures/static/js/2.126bbd00.chunk.js.map",
+    "static/js/3.50f2e815.chunk.js": "/Prextures/static/js/3.50f2e815.chunk.js",
+    "static/js/3.50f2e815.chunk.js.map": "/Prextures/static/js/3.50f2e815.chunk.js.map",
+    "index.html": "/Prextures/index.html",
+    "precache-manifest.03d42a4a82f3ff0881c52d024ae8dad3.js": "/Prextures/precache-manifest.03d42a4a82f3ff0881c52d024ae8dad3.js",
+    "service-worker.js": "/Prextures/service-worker.js",
+    "static/css/main.4269d9d8.chunk.css.map": "/Prextures/static/css/main.4269d9d8.chunk.css.map",
+    "static/js/2.126bbd00.chunk.js.LICENSE.txt": "/Prextures/static/js/2.126bbd00.chunk.js.LICENSE.txt",
+    "static/media/login.css": "/Prextures/static/media/emirates.20fe3f99.jpg",
+    "static/media/home.css": "/Prextures/static/media/home.66f9ec03.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f4d3a4b.js",
+    "static/js/2.126bbd00.chunk.js",
+    "static/css/main.4269d9d8.chunk.css",
+    "static/js/main.bc8151b0.chunk.js"
+  ]
+}
