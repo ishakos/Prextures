@@ -75,7 +75,7 @@ export default function Main() {
     const token = sessionStorage.getItem("accessToken");
     if (!token) {
       alert("User Not Logged In");
-      navigate("/Prextures/login");
+      navigate("/login");
     }
     axios
       .get("http://localhost:3001/login/auth", {
@@ -123,7 +123,7 @@ export default function Main() {
           headerItems={headerItems}
           imageUrl={imageUrl}
         />
-        <Link to="/Prextures/login" className="login">
+        <Link to="/login" className="login">
           Logout
         </Link>
         <Hamburger head={head} setHead={setHead} />
@@ -196,7 +196,7 @@ function SpecialLogin() {
     <li className="specialLiLogin">
       <Link
         style={{ display: "block", textAlign: "start" }}
-        to="/Prextures/login"
+        to="/login"
         className="login-yo"
       >
         Logout

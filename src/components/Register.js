@@ -131,7 +131,7 @@ function Registered() {
         <span className="sent" style={{ textAlign: "center" }}>
           If you dont verify it your account will be deleted within 24 hours.
         </span>
-        <Link style={{ fontWeight: "bold" }} to="/Prextures">
+        <Link style={{ fontWeight: "bold" }} to="/">
           Go back home
         </Link>
       </div>

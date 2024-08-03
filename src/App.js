@@ -17,27 +17,23 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/Prextures" exact element={<Home />} />
-        <Route path="/Prextures/login" exact element={<Login />} />
-        <Route path="/Prextures/register" exact element={<Register />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/register" exact element={<Register />} />
+        <Route path="/forgotpassword" exact element={<ForgotPassword />} />
         <Route
-          path="/Prextures/forgotpassword"
-          exact
-          element={<ForgotPassword />}
-        />
-        <Route
-          path="/Prextures/login/reset/:id/:token"
+          path="/login/reset/:id/:token"
           exact
           element={<ResetPassword />}
         />
         <Route
-          path="/Prextures/emailVerification/:username/:token"
+          path="/emailVerification/:username/:token"
           exact
           element={<EmailConfirmation />}
         />
-        <Route path="Prextures/main" element={<Main />}>
+        <Route path="/main" element={<Main />}>
           <Route path="player" exact element={<Player />} />
           <Route path="scores" exact element={<Scores />} />
           <Route path="settings" exact element={<Settings />} />

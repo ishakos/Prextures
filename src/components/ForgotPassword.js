@@ -102,7 +102,7 @@ function Message({ submit }) {
       <button onClick={submit}>Submit</button>
       <p className="message">
         Not registered?
-        <Link to="/Prextures/register" style={{ display: "block" }}>
+        <Link to="/register" style={{ display: "block" }}>
           Create an account
         </Link>
       </p>

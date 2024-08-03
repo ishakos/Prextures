@@ -21,7 +21,7 @@ export default function Login() {
     axios.post("http://localhost:3001/login/", data).then((response) => {
       if (!response.data.error) {
         sessionStorage.setItem("accessToken", response.data);
-        navigate("/Prextures/main/player");
+        navigate("/main/player");
       } else {
         if (response.data.error === "User Dosent Exist!") {
           setError1(true);
@@ -118,7 +118,7 @@ function Message({ login }) {
       <button onClick={login}>Login</button>
       <p className="message">
         Not registered?
-        <Link to="/Prextures//register" style={{ display: "block" }}>
+        <Link to="/register" style={{ display: "block" }}>
           Create an account
         </Link>
       </p>

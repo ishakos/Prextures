@@ -40,7 +40,7 @@ export default function ResetPassword() {
             setErrormsg("Passwords does not match");
           } else {
             alert("link expired");
-            navigate("/Prextures");
+            navigate("/");
           }
         });
     }
@@ -72,7 +72,7 @@ function Updated() {
       <span className="sent" style={{ textAlign: "center" }}>
         Password updated succesfully
       </span>
-      <Link style={{ fontWeight: "bold" }} to="/Prextures">
+      <Link style={{ fontWeight: "bold" }} to="/">
         Go back home
       </Link>
     </>
