@@ -1,3 +1,4 @@
+import React from "react";
 import "../css/scores.css";
 import { useEffect, useState } from "react";
 import axios from "axios";

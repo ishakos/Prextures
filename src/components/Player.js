@@ -1,3 +1,4 @@
+import React from "react";
 import "../css/player.css";
 import "../css/mini-comp/header.css";
 import axios from "axios";
