@@ -25,7 +25,7 @@ export default function Scores() {
     const token = sessionStorage.getItem("accessToken");
     if (!token) {
       alert("User Not Logged In");
-      navigate("/login");
+      navigate("/Prextures/login");
     }
     axios
       .get("http://localhost:3001/scores/predictions", {
@@ -47,7 +47,7 @@ export default function Scores() {
         if (event.newValue === null) {
           setToken(null);
           alert("User Not Logged In");
-          navigate("/login");
+          navigate("/Prextures/login");
         }
       }
     };

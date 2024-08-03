@@ -40,7 +40,7 @@ export default function ResetPassword() {
             setErrormsg("Passwords does not match");
           } else {
             alert("link expired");
-            navigate("/");
+            navigate("/Prextures");
           }
         });
     }

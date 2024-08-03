@@ -19,21 +19,25 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="" exact element={<Home />} />
-        <Route path="/login" exact element={<Login />} />
-        <Route path="/register" exact element={<Register />} />
-        <Route path="/forgotpassword" exact element={<ForgotPassword />} />
+        <Route path="/Prextures" exact element={<Home />} />
+        <Route path="/Prextures/login" exact element={<Login />} />
+        <Route path="/Prextures/register" exact element={<Register />} />
         <Route
-          path="/login/reset/:id/:token"
+          path="/Prextures/forgotpassword"
+          exact
+          element={<ForgotPassword />}
+        />
+        <Route
+          path="/Prextures/login/reset/:id/:token"
           exact
           element={<ResetPassword />}
         />
         <Route
-          path="/emailVerification/:username/:token"
+          path="/Prextures/emailVerification/:username/:token"
           exact
           element={<EmailConfirmation />}
         />
-        <Route path="main" element={<Main />}>
+        <Route path="Prextures/main" element={<Main />}>
           <Route path="player" exact element={<Player />} />
           <Route path="scores" exact element={<Scores />} />
           <Route path="settings" exact element={<Settings />} />
