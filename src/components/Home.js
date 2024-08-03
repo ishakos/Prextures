@@ -18,7 +18,7 @@ export default function Home() {
           enjoy the thrill of predicting Premier League fixtures!
         </h2>
         <button className="welcome-button">
-          <Link to={"/login"}>Start Now</Link>
+          <Link to={"/Prextures/login"}>Start Now</Link>
         </button>
       </div>
     </div>

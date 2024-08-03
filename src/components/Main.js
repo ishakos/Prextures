@@ -123,7 +123,7 @@ export default function Main() {
           headerItems={headerItems}
           imageUrl={imageUrl}
         />
-        <Link to="/login" className="login">
+        <Link to="/Prextures/login" className="login">
           Logout
         </Link>
         <Hamburger head={head} setHead={setHead} />
@@ -196,7 +196,7 @@ function SpecialLogin() {
     <li className="specialLiLogin">
       <Link
         style={{ display: "block", textAlign: "start" }}
-        to="/login"
+        to="/Prextures/login"
         className="login-yo"
       >
         Logout

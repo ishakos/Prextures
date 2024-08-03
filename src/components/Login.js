@@ -118,7 +118,7 @@ function Message({ login }) {
       <button onClick={login}>Login</button>
       <p className="message">
         Not registered?
-        <Link to="/register" style={{ display: "block" }}>
+        <Link to="/Prextures//register" style={{ display: "block" }}>
           Create an account
         </Link>
       </p>

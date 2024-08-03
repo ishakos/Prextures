@@ -72,7 +72,7 @@ function Updated() {
       <span className="sent" style={{ textAlign: "center" }}>
         Password updated succesfully
       </span>
-      <Link style={{ fontWeight: "bold" }} to="/">
+      <Link style={{ fontWeight: "bold" }} to="/Prextures">
         Go back home
       </Link>
     </>
