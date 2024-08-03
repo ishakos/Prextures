@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #0078ff;
+  --secondary-color: #009fff;
+}
+.login-page {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  background-image: url("../images/emirates.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login-page .emailVer {
+  width: 100%;
+  padding: 50px 0;
+}
+.login-page .emailV {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 999;
+}
+.login-page::before {
+  content: "";
+  background-color: #00000079;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.login-page .goback-form {
+  display: block;
+  text-align: start;
+  margin-bottom: 15px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto;
+  top: 50px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form input[type="password"] {
+  margin-bottom: 15px;
+}
+.login-page .form .login-form .message-forgot-password {
+  margin-bottom: 15px;
+  text-align: start;
+  color: var(--primary-color);
+  font-size: 12px;
+  text-decoration: none;
+}
+.form .error-username,
+.form .error-email,
+.form .error-password {
+  display: block;
+  color: red;
+  text-align: start;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.form .sent {
+  display: block;
+  color: green;
+  text-align: start;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: var(--primary-color);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: var(--secondary-color);
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.form .register {
+  margin-top: 10px;
+}

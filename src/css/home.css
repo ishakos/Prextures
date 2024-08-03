@@ -1,0 +1,117 @@
+.home-page {
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  background-image: url("../images/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  display: flex;
+  align-items: center;
+}
+.home-page::after {
+  content: "";
+  background-color: #00000079;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+.home-page .home-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: left;
+  padding: 0 150px;
+  text-align: start;
+  font-weight: bold;
+  color: white;
+}
+.home-page .home-container .welcome-title {
+  font-size: 70px;
+  line-height: 100px;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.home-page .home-container .welcome-text {
+  width: 500px;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 24px;
+}
+.home-page .home-container .welcome-button {
+  font-size: 35px;
+  margin: 35px 0;
+  padding: 15px 18px;
+  transition: 0.4s;
+  display: inline-block;
+  color: white;
+  border-color: white;
+  border-width: 4px;
+  border-style: solid;
+  background-color: transparent;
+  font-weight: bold;
+}
+.home-page .home-container .welcome-button:hover {
+  background-color: #0078ff;
+}
+
+@media (min-width: 1200px) {
+  .home-page .home-container .welcome-title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home-page .home-container {
+    padding: 0 100px;
+  }
+  .home-page .home-container .welcome-title {
+    margin: 0;
+    font-size: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-page .home-container {
+    padding: 0 50px;
+  }
+  .home-page .home-container .welcome-title {
+    margin: 0;
+    font-size: 50px;
+  }
+  .home-page .home-container .welcome-text {
+    width: 600px;
+  }
+  .home-page .home-container .welcome-button {
+    font-size: 25px;
+    margin: 35px 0;
+    padding: 15px 18px;
+  }
+}
+@media (max-width: 767px) {
+  .home-page {
+    background-position: 25% 50%;
+  }
+  .home-page .home-container {
+    padding: 0 50px;
+  }
+  .home-page .home-container .welcome-title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .home-page .home-container .welcome-text {
+    width: 350px;
+    font-size: 20px;
+  }
+  .home-page .home-container .welcome-button {
+    font-size: 25px;
+    margin: 35px 0;
+    padding: 15px 18px;
+  }
+}

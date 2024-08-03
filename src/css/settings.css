@@ -1,0 +1,182 @@
+.settings {
+  width: 100%;
+}
+.settings .container {
+  min-height: 60vh;
+  padding: 0 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings .container .pfp {
+  gap: 10px;
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.settings .container .pfp label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.settings .container .pfp .dembele {
+  margin-bottom: 10px;
+}
+.settings .container .pfp input {
+  margin-bottom: 10px;
+}
+.settings .container .user-infos {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.settings .container .user-infos .user-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.settings .container .user-infos .user-data p:first-child {
+  margin-bottom: 5px;
+}
+.settings .container .user-infos .user-data p span {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.settings .container .user-infos .resetPassword {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.settings .container .user-infos .resetPassword input {
+  width: 60%;
+  display: block;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.settings .container .user-infos .deleteButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* CSS */
+.button-24,
+.button-25 {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:active {
+  background: #c73833;
+}
+.button-25 {
+  border: 1px solid green;
+  background: green;
+}
+.button-25:active {
+  background: #c73833;
+}
+
+/* CSS */
+.button-14 {
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  height: 29px;
+  font-size: 13px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 11px;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-14:active {
+  border-bottom-color: #a2a6ac;
+}
+
+.button-14:active:hover {
+  border-bottom-color: #a2a6ac;
+}
+
+.button-14:hover {
+  border-color: #a2a6ac #979aa1 #82858a;
+}
+
+.button-14:focus {
+  border-color: #e77600;
+  box-shadow: rgba(228, 121, 17, 0.5) 0 0 3px 2px;
+  outline: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .settings .container {
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  .settings .container .user-infos .resetPassword input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    height: 40px;
+  }
+  .settings .unexpected {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .settings .container {
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 0;
+  }
+  .settings .container .user-infos .resetPassword input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    height: 40px;
+  }
+  .settings .unexpected {
+    margin-top: 30px;
+  }
+}

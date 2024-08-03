@@ -1,0 +1,178 @@
+:root {
+  --Main-color: #0078ff;
+  --Secondary-color: #00ff55;
+  --Third-color: rgb(25, 212, 255, 0.55);
+  --Fourth-color: rgb(121, 81, 255, 0.65);
+  --hover-Purple: rgb(114, 0, 124);
+  --active-Purple: rgb(45, 0, 48);
+  --ucl: #162e58;
+  --uel: #f76600;
+  --uecl: #00b813;
+  --White: #fff;
+  --bigPadding: 40px 0px;
+}
+/* Predictions */
+.predictions .main-title {
+  color: var(--hover-Purple);
+}
+.predictions {
+  position: relative;
+  padding-bottom: 0px;
+  min-height: 700px;
+  overflow-y: hidden;
+}
+.predictions .lg {
+  left: 0;
+  right: 0;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to bottom, transparent, #f6f6f6);
+  bottom: 0;
+  z-index: 10;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.predictions .lg button {
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #0075ff;
+  font-weight: bold;
+  border-radius: 50%;
+  padding-top: 5px;
+  border: none;
+  background-color: transparent;
+  animation: bounce 0.6s linear infinite;
+}
+@keyframes bounce {
+  from {
+    margin-bottom: 10px;
+  }
+  to {
+    margin-top: 10px;
+  }
+}
+.predictions .pre-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  padding: 0px 20px 40px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.predictions .pre-table .round {
+  position: relative;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  margin-right: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow: 0px 0px 5px 0px rgb(0, 0, 0, 0.5);
+  padding: 5px 0px;
+  margin-top: 50px;
+  counter-increment: rounds-counter;
+}
+.predictions .pre-table .round::before {
+  content: counter(rounds-counter);
+  width: calc(100% + 1px);
+  padding: 2px 0px;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  top: calc(0% - 15px);
+  left: calc(100%);
+  transform: translate(-100%, -50%);
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.predictions .pre-table .round .match {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 0px;
+  border-top: 0px solid var(--Main-color);
+}
+.predictions .pre-table .round .match:first-child {
+  border: none;
+}
+.predictions .pre-table .round img {
+  width: 35px;
+}
+.predictions .pre-table .round .result {
+  margin: 0px 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background-color: var(--Main-color);
+  width: 40px;
+  height: 26px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .predictions .main-title {
+    font-size: 40px;
+  }
+  .predictions .pre-table {
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  }
+}
+/* Predictions */
+/* CSS */
+.predictions .switch {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.button-34 {
+  background: #5e5df0;
+  border-radius: 10px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+.button-34:first-child {
+  background-color: #162e58;
+  margin-right: 10px;
+}
+.button-34:last-child {
+  background-color: #d45900;
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .button-34:first-child {
+    margin-right: 4px;
+  }
+  .button-34:last-child {
+    margin-left: 4px;
+  }
+}
