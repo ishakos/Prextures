@@ -43,7 +43,7 @@ function App() {
           <Route path="settings" exact element={<Settings />} />
         </Route>
 
-        <Route path="*" exact element={<Home />} />
+        <Route path="*" exact element={<> Page Not Found </>} />
       </Routes>
     </Router>
   );
