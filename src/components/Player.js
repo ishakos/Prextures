@@ -57,7 +57,7 @@ export default function Player() {
       navigate("/login");
     }
     axios
-      .get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/auth", {
+      .get("https://prexturesserver.onrender.com/login/auth", {
         headers: { accessToken: token || "" },
       })
       .then((response) => {
@@ -69,7 +69,7 @@ export default function Player() {
       });
 
     axios
-      .get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/predictions", {
+      .get("https://prexturesserver.onrender.com/scores/predictions", {
         headers: { accessToken: token || "" },
       })
       .then((response) => {
@@ -105,13 +105,13 @@ export default function Player() {
 
   //getting (clubs + fixtures) data
   useEffect(() => {
-    axios.get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/teams").then((response) => {
+    axios.get("https://prexturesserver.onrender.com/scores/teams").then((response) => {
       if (response.data.teams) {
         setGetClubs(response.data.teams);
       }
     });
 
-    axios.get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/fixtures").then((response) => {
+    axios.get("https://prexturesserver.onrender.com/scores/fixtures").then((response) => {
       if (response.data.fixtures) {
         setFixtures(response.data.fixtures);
       }
@@ -277,7 +277,7 @@ export default function Player() {
       },
     };
     axios
-      .post("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/predictions", data, config)
+      .post("https://prexturesserver.onrender.com/scores/predictions", data, config)
       .then((response) => {
         if (response.data.error) {
           setError(response.data.error);

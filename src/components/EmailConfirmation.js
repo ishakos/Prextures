@@ -12,7 +12,7 @@ export default function EmailConfirmation() {
     const data = { username: username, token: token };
     axios
       .post(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/users/emailVerification/:username/:token",
+        "https://prexturesserver.onrender.com/users/emailVerification/:username/:token",
         data
       )
       .then((response) => {

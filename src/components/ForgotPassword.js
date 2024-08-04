@@ -11,7 +11,7 @@ export default function ForgotPassword() {
   const [error1, setError1] = useState(false);
 
   useEffect(() => {
-    axios.get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/users").then((response) => {
+    axios.get("https://prexturesserver.onrender.com/users").then((response) => {
       setListOfUsers(response.data.users);
     });
   }, []);
@@ -32,7 +32,7 @@ export default function ForgotPassword() {
       setError1(true);
     } else {
       axios
-        .post("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/forgot", { email: userEmail })
+        .post("https://prexturesserver.onrender.com/login/forgot", { email: userEmail })
         .then((response) => {
           if (response.data.match) {
             setSent(true);

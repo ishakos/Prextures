@@ -32,7 +32,7 @@ export default function ResetPassword() {
     } else {
       axios
         .post(
-          "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/reset/:id/:token",
+          "https://prexturesserver.onrender.com/login/reset/:id/:token",
           data
         )
         .then((response) => {

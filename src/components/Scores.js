@@ -29,7 +29,7 @@ export default function Scores() {
     }
     axios
       .get(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/predictions",
+        "https://prexturesserver.onrender.com/scores/predictions",
         {
           headers: { accessToken: token || "" },
         }
@@ -65,7 +65,7 @@ export default function Scores() {
   useEffect(() => {
     axios
       .get(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/teams"
+        "https://prexturesserver.onrender.com/scores/teams"
       )
       .then((response) => {
         if (response.data.teams) {
@@ -74,7 +74,7 @@ export default function Scores() {
       });
     axios
       .get(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/fixtures"
+        "https://prexturesserver.onrender.com/scores/fixtures"
       )
       .then((response) => {
         if (response.data.fixtures) {

@@ -36,7 +36,7 @@ export default function Settings() {
       navigate("/login");
     }
     axios
-      .get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/auth", {
+      .get("https://prexturesserver.onrender.com/login/auth", {
         headers: { accessToken: token || "" },
       })
       .then((response) => {
@@ -118,7 +118,11 @@ export default function Settings() {
           path: newPath,
         };
         axios
-          .post("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/profile/pfp", data, config)
+          .post(
+            "https://prexturesserver.onrender.com/profile/pfp",
+            data,
+            config
+          )
           .then(() => {});
       });
     });
@@ -157,7 +161,7 @@ export default function Settings() {
   const deleteAcc = () => {
     axios
       .post(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/profile/deleteacc",
+        "https://prexturesserver.onrender.com/profile/deleteacc",
         {},
         {
           headers: {
@@ -193,7 +197,11 @@ export default function Settings() {
       setError("Passwords dosent match!");
     } else {
       axios
-        .post("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/profile/resetpassword", data, config)
+        .post(
+          "https://prexturesserver.onrender.com/profile/resetpassword",
+          data,
+          config
+        )
         .then((response) => {
           if (response.data.error) {
             setError(response.data.error);

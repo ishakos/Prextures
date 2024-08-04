@@ -78,12 +78,9 @@ export default function Main() {
       navigate("/login");
     }
     axios
-      .get(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/auth",
-        {
-          headers: { accessToken: token || "" },
-        }
-      )
+      .get("https://prexturesserver.onrender.com/login/auth", {
+        headers: { accessToken: token || "" },
+      })
       .then((response) => {
         if (response.data.error) {
           console.log(response.data);

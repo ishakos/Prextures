@@ -19,10 +19,7 @@ export default function Login() {
   const login = () => {
     const data = { username: username, password: password };
     axios
-      .post(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/",
-        data
-      )
+      .post("https://prexturesserver.onrender.com/login/", data)
       .then((response) => {
         if (!response.data.error) {
           sessionStorage.setItem("accessToken", response.data);

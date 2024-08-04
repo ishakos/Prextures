@@ -13,13 +13,9 @@ export default function Register() {
   const [sent, setSent] = useState(false);
 
   useEffect(() => {
-    axios
-      .get(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/users"
-      )
-      .then((response) => {
-        setListOfUsers(response.data.users);
-      });
+    axios.get("https://prexturesserver.onrender.com/users").then((response) => {
+      setListOfUsers(response.data.users);
+    });
   }, []);
 
   const initialValues = {
@@ -79,10 +75,7 @@ export default function Register() {
 
   const onSubmit = (data) => {
     axios
-      .post(
-        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/users",
-        data
-      )
+      .post("https://prexturesserver.onrender.com/users", data)
       .then(() => {});
     setSent(true);
   };
