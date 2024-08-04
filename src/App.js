@@ -17,7 +17,7 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <Router basename="/Prextures">
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/login" exact element={<Login />} />
