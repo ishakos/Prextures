@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Prextures/static/css/main.4269d9d8.chunk.css",
-    "main.js": "/Prextures/static/js/main.239c867a.chunk.js",
-    "main.js.map": "/Prextures/static/js/main.239c867a.chunk.js.map",
+    "main.js": "/Prextures/static/js/main.061ef23e.chunk.js",
+    "main.js.map": "/Prextures/static/js/main.061ef23e.chunk.js.map",
     "runtime-main.js": "/Prextures/static/js/runtime-main.5f4d3a4b.js",
     "runtime-main.js.map": "/Prextures/static/js/runtime-main.5f4d3a4b.js.map",
     "static/js/2.126bbd00.chunk.js": "/Prextures/static/js/2.126bbd00.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.50f2e815.chunk.js": "/Prextures/static/js/3.50f2e815.chunk.js",
     "static/js/3.50f2e815.chunk.js.map": "/Prextures/static/js/3.50f2e815.chunk.js.map",
     "index.html": "/Prextures/index.html",
-    "precache-manifest.32a7d145a2992d03d5c9b933a29c678c.js": "/Prextures/precache-manifest.32a7d145a2992d03d5c9b933a29c678c.js",
+    "precache-manifest.f2d74f4104201f1abc087f20f9040902.js": "/Prextures/precache-manifest.f2d74f4104201f1abc087f20f9040902.js",
     "service-worker.js": "/Prextures/service-worker.js",
     "static/css/main.4269d9d8.chunk.css.map": "/Prextures/static/css/main.4269d9d8.chunk.css.map",
     "static/js/2.126bbd00.chunk.js.LICENSE.txt": "/Prextures/static/js/2.126bbd00.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.5f4d3a4b.js",
     "static/js/2.126bbd00.chunk.js",
     "static/css/main.4269d9d8.chunk.css",
-    "static/js/main.239c867a.chunk.js"
+    "static/js/main.061ef23e.chunk.js"
   ]
 }

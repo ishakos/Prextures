@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f635d79706190a1349000979a3e028ab",
+    "revision": "93ce6ae8252fcfd01e73cc3f208c0fad",
     "url": "/Prextures/index.html"
   },
   {
-    "revision": "56fb90572e38c38eac4b",
+    "revision": "50d8228a34d7cda228f9",
     "url": "/Prextures/static/css/main.4269d9d8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Prextures/static/js/3.50f2e815.chunk.js"
   },
   {
-    "revision": "56fb90572e38c38eac4b",
-    "url": "/Prextures/static/js/main.239c867a.chunk.js"
+    "revision": "50d8228a34d7cda228f9",
+    "url": "/Prextures/static/js/main.061ef23e.chunk.js"
   },
   {
     "revision": "551719872a321d517b48",
