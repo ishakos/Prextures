@@ -31,7 +31,10 @@ export default function ResetPassword() {
       setErrormsg("Password does not match!");
     } else {
       axios
-        .post("http://localhost:3001/login/reset/:id/:token", data)
+        .post(
+          "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/reset/:id/:token",
+          data
+        )
         .then((response) => {
           if (response.data.updated) {
             setUpdated(true);

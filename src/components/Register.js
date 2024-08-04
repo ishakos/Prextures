@@ -13,9 +13,13 @@ export default function Register() {
   const [sent, setSent] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/users").then((response) => {
-      setListOfUsers(response.data.users);
-    });
+    axios
+      .get(
+        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/users"
+      )
+      .then((response) => {
+        setListOfUsers(response.data.users);
+      });
   }, []);
 
   const initialValues = {
@@ -74,7 +78,12 @@ export default function Register() {
   }
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:3001/users", data).then(() => {});
+    axios
+      .post(
+        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/users",
+        data
+      )
+      .then(() => {});
     setSent(true);
   };
 

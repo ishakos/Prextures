@@ -57,7 +57,7 @@ export default function Player() {
       navigate("/login");
     }
     axios
-      .get("http://localhost:3001/login/auth", {
+      .get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/auth", {
         headers: { accessToken: token || "" },
       })
       .then((response) => {
@@ -69,7 +69,7 @@ export default function Player() {
       });
 
     axios
-      .get("http://localhost:3001/scores/predictions", {
+      .get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/predictions", {
         headers: { accessToken: token || "" },
       })
       .then((response) => {
@@ -105,13 +105,13 @@ export default function Player() {
 
   //getting (clubs + fixtures) data
   useEffect(() => {
-    axios.get("http://localhost:3001/scores/teams").then((response) => {
+    axios.get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/teams").then((response) => {
       if (response.data.teams) {
         setGetClubs(response.data.teams);
       }
     });
 
-    axios.get("http://localhost:3001/scores/fixtures").then((response) => {
+    axios.get("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/fixtures").then((response) => {
       if (response.data.fixtures) {
         setFixtures(response.data.fixtures);
       }
@@ -277,7 +277,7 @@ export default function Player() {
       },
     };
     axios
-      .post("http://localhost:3001/scores/predictions", data, config)
+      .post("https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/scores/predictions", data, config)
       .then((response) => {
         if (response.data.error) {
           setError(response.data.error);

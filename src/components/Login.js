@@ -18,18 +18,23 @@ export default function Login() {
 
   const login = () => {
     const data = { username: username, password: password };
-    axios.post("http://localhost:3001/login/", data).then((response) => {
-      if (!response.data.error) {
-        sessionStorage.setItem("accessToken", response.data);
-        navigate("/main/player");
-      } else {
-        if (response.data.error === "User Dosent Exist!") {
-          setError1(true);
+    axios
+      .post(
+        "https://api.render.com/deploy/srv-cqnc7p2j1k6c73antgmg?key=Ge-HqoTj4OY/login/",
+        data
+      )
+      .then((response) => {
+        if (!response.data.error) {
+          sessionStorage.setItem("accessToken", response.data);
+          navigate("/main/player");
         } else {
-          setError2(true);
+          if (response.data.error === "User Dosent Exist!") {
+            setError1(true);
+          } else {
+            setError2(true);
+          }
         }
-      }
-    });
+      });
   };
 
   return (
