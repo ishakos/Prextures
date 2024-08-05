@@ -128,11 +128,11 @@ function Registered() {
     <div className="login-page">
       <div className="form">
         <span className="sent" style={{ textAlign: "center" }}>
-          Register done!
+          Please verify your email!
         </span>
         <span className="sent" style={{ textAlign: "center" }}>
-          Please ignore the email sent to your mail, and make sure you dont
-          refresh the page because of github pages.
+          If you dont verify your email, your account will be deleted within 24
+          hours!
         </span>
         <Link style={{ fontWeight: "bold" }} to="/">
           Go back home
