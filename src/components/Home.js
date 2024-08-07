@@ -2,6 +2,7 @@ import React from "react";
 import "../css/home.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function Home() {
   useEffect(() => {
