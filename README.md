@@ -1,4 +1,4 @@
-# Prextures – Frontend
+# Prextures – Frontend ⚽
 
 Prextures is a full-stack web application that allows users to predict **Premier League match results for the entire 2023–2024 season**.
 
@@ -9,13 +9,16 @@ The backend API and the admin panel are maintained in separate repositories.
 
 ## 🏆 About Prextures
 
-Prextures is a game-like prediction platform where users:
+Prextures is a football prediction game where users:
 
+- Create an account
 - Submit predictions for Premier League matches
 - Have their predictions securely saved
-- See whether their predictions were **correct or incorrect** once official match results are available
+- **Cannot modify predictions once the match starts (deadline lock)**
+- See whether their predictions were **correct or incorrect** after official match results
+- Compete with other users through a **dynamic standings table**
 
-The goal is to provide a clean, interactive experience for football fans while demonstrating a real-world **client–server architecture**.
+The application combines football enthusiasm with real-world **client–server architecture** principles.
 
 ---
 
@@ -23,29 +26,41 @@ The goal is to provide a clean, interactive experience for football fans while d
 
 The frontend application is responsible for:
 
-- User authentication (login / register)
+- User authentication (registration & login)
 - Displaying Premier League fixtures
 - Allowing users to submit match predictions
-- Showing prediction status (correct / incorrect) after results
+- Enforcing prediction deadlines (locked at real match kickoff time)
+- Displaying prediction outcomes (correct / incorrect)
+- Showing league **standings based on user prediction performance**
 - Communicating with the backend via REST APIs
-- Providing a responsive and user-friendly UI
+- Providing a responsive and intuitive user interface
 
 ---
 
 ## 🧱 Architecture Overview
 
-- **Frontend**: This repository (user-facing web app)
-- **Backend**: REST API (authentication, predictions, results, persistence)
-- **Admin Panel**: Separate isolated application used to manage matches and results
+- **Frontend**: This repository (user-facing web application)
+- **Backend**: REST API (authentication, predictions, results, scoring logic)
+- **Admin Panel**: Separate isolated application used to manage fixtures, results, and system data
 
-This separation ensures scalability, maintainability, and clear responsibility boundaries.
+This separation improves scalability, maintainability, and security.
+
+---
+
+## 🎮 Core Features
+
+- 🔐 Secure user authentication
+- 📅 Full Premier League 2023–24 fixtures
+- ⏱ Prediction deadline enforcement (locked at match start)
+- ✅ Automatic validation of predictions after results
+- 🏅 Live-updated standings / leaderboard
+- 📊 Clear visualization of user performance
 
 ---
 
 ## 🛠 Tech Stack
 
-- JavaScript
-- React
+- React.js
 - HTML5 & CSS3
 - REST API communication
 - JWT-based authentication
@@ -54,7 +69,7 @@ This separation ensures scalability, maintainability, and clear responsibility b
 
 ## 🚀 Run Locally
 
-> ⚠️ Note: A running backend is required for full functionality.
+> ⚠️ A running backend server is required for full functionality.
 
 ```bash
 # Clone the repository
